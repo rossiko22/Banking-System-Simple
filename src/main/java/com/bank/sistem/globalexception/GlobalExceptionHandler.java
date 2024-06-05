@@ -12,8 +12,9 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
-//This is class for handing custo exceptions or exceptions,
+//This is class for handing custom exceptions or exceptions,
 //It is marked with controller advice so the spring can recognise it and search trought whole programs for errors
+//When the custom exception is thrown it gets the status and searches first here if there is any definiton
 @ControllerAdvice
 public class GlobalExceptionHandler {
 

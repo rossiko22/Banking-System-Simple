@@ -38,7 +38,7 @@ public class AccountService {
     public Account withdraw(Long id, Double amount) {
         Account account = accountRepository.findById(id).orElseThrow(() -> new AccountNotFoundException("Account with that id does not exist"));
         if (account.getAccountBalance() < amount){
-            throw new InsufficientFundsException("There are insufficient funds on the account");
+            throw new InsufficientFundsException("There are insufficient funds on the account"); // We check conditions like this and throw Exceptions
         }else{
             account.setAccountBalance(account.getAccountBalance() - amount);
         }
