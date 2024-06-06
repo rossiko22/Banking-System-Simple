@@ -3,7 +3,7 @@
 
 ## Introduction to Application
 
-    -This is a Simple Banking System , still in developement
+    This is a Simple Banking System , still in developement
     and some cool features.
 
     To run it you just need the requirements and you are good.
@@ -20,7 +20,7 @@ You can install the requirements from here :
 | Endpoint|Description                                                          |
 | ----------------- | ------------------------------------------------------------------ |
 | `/api/account` | Retrieves all bank accounts  |
-|`/api/account{id}`| Retrieves a specific account by its ID |
+|`/api/account/{id}`| Retrieves a specific account by its ID |
 
 ## POST Endpoints
 
@@ -30,9 +30,14 @@ You can install the requirements from here :
 |`/create`|Creates a new bank account|"accountHolderName" : "nameExample"|
 |||"accountBalance" : 5000 |
 |||}|
-|`/api/account/{id}/deposit`|Deposits on account with id|{||
-|||"depositAmount" : 5000|
+|||{||
+|`/api/account/{id}/deposit`|Deposits on account with id|"depositAmount" : 5000|
 |||}|
-|`/api/account/{id}/withdraw`|Withdraws from account with id|{||
-|||"withdrawAmount" : 5000|
+|||{||
+|`/api/account/{id}/withdraw`|Withdraws from account with id|"withdrawAmount" : 5000|
 |||}|
+
+## Authors
+
+[@rossiko22](https://github.com/rossiko22)
+
